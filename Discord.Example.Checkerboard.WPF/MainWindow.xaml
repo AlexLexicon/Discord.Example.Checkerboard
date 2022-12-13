@@ -3,36 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:v="clr-namespace:Discord.Example.Checkerboard.WPF"
         mc:Ignorable="d"
         Title="Discord.Example.Checkerboard"
         Width="800"
         Height="450">
-    
-    <Grid x:Name="BorderGrid">
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+    <Grid Background="Beige">
+        
+        <v:ProgrammaticallyUserControl/>
 
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <Border Grid.Row="0" Grid.Column="0"/>
-        <Border Grid.Row="0" Grid.Column="1"/>
-        <Border Grid.Row="0" Grid.Column="2"/>
-
-        <Border Grid.Row="1" Grid.Column="0"/>
-        <Border Grid.Row="1" Grid.Column="1"/>
-        <Border Grid.Row="1" Grid.Column="2"/>
-
-        <Border Grid.Row="2" Grid.Column="0"/>
-        <Border Grid.Row="2" Grid.Column="1"/>
-        <Border Grid.Row="2" Grid.Column="2"/>
+        <!--<v:FromXamlUserControl/>-->
 
     </Grid>
 </Window>
